@@ -1,0 +1,17 @@
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Presentation.exe
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Domain.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\DataAccess.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Domain.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.MenuPrincipalLogin.resources
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.exe
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.pdb
