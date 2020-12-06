@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices; //poder arrastrar la ventana 
+using Domain;
 
 namespace Presentation
 {
@@ -26,6 +27,7 @@ namespace Presentation
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         ////////////////////////////////////////////////////////////////////////////////
 
+        #region Eventos/Efectos del menu Login
 
         private void txtuser_Enter(object sender, EventArgs e)
         {
@@ -91,6 +93,51 @@ namespace Presentation
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        #endregion
+
+
+        //Login con ambos formularios ya agregados
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if (txtuser.Text != "USUARIO")
+            {
+                if(txtpass.Text != "CONTRASEÑA")
+                {
+                    UserModel user = new UserModel(); //instanciar al modelo usuario de la capa de dominio
+                    var validLogin = user.LoginUser(txtuser.Text, txtpass.Text); //pasar por parametro el usuario y contraseña
+                    if (validLogin == true) //si el inicio de sesion es correcto, instancio al formulario principal 
+                    {
+                        FormPrincipal mainMenu = new FormPrincipal();
+                        mainMenu.Show();
+                        mainMenu.FormClosed += Logout; //sobrecargar el metodo FormClosed con el metodo de cerrar secion
+                        this.Hide(); //oculta el menu login
+                    }
+                    else //si el inicio de sesion no es exitoso
+                    {
+                        msgError("Usuario o Contraseña incorrectos! \n  Por Favor intentelo de nuevo.");
+                        txtpass.Clear();
+                        txtuser.Focus();
+                    }
+                }
+                else msgError("Por favor ingrese una contraseña!");
+            }
+            else msgError("Por favor ingrese un usuario!");
+            
+        }
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = " " + msg;
+            lblErrorMessage.Visible = true;
+        }
+
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtpass.Clear();
+            txtuser.Clear();
+            lblErrorMessage.Visible = false;
+            this.Show(); //muestra de nuevo el menu Login en ves del menu principal
+            txtuser.Focus();
         }
     }
 }
