@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using CapaSoporte.Cache;
 
 namespace DataAccess
 {
@@ -27,6 +28,14 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
+                        while (reader.Read()) //agregamos los valores de las colunmas a los campos de la clase statica (capa soporte / userLoginCache)
+                        {
+                            UserLoginCache.IdUser = reader.GetInt32(0); //posicion de la tabla base de datos 0 es Id usuario
+                            UserLoginCache.FirstName = reader.GetString(3);
+                            UserLoginCache.LastName = reader.GetString(4);
+                            UserLoginCache.Position = reader.GetString(5);
+                            UserLoginCache.Email = reader.GetString(6);
+                        }
                         return true;
                     }
                     else
