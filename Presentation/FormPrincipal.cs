@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaSoporte.Cache;
 
 namespace Presentation
 {
@@ -16,6 +17,8 @@ namespace Presentation
         public FormPrincipal()
         {
             InitializeComponent();
+
+            LoadUserData(); //correcion provicional del error  
 
             //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
             this.SetStyle(ControlStyles.ResizeRedraw, true);
@@ -159,6 +162,19 @@ namespace Presentation
                 this.Close();
             }
         }
+
+        private void FormPrincipal_Load(object sender, EventArgs e) //METODO NO CARGA LOS DATOS A LOS LABELS - SOLUCION PROVICIONAL INICIANDO DESDE MAIN()
+        {
+            LoadUserData();
+        }
+
+        private void LoadUserData() //metodo para usar los datos de la base de datos guardados en la cache de la capa soporte
+        {
+            lblName.Text = UserLoginCache.FirstName + ", " + UserLoginCache.LastName;
+            lblPosition.Text = UserLoginCache.Position;
+            lblEmail.Text = UserLoginCache.Email;
+        }
+
         #endregion
 
         #region Metodos para los formularios 

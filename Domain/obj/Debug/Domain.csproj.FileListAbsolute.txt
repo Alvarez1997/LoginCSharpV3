@@ -7,3 +7,5 @@ C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\obj\Debug\Domain.csproj.
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\obj\Debug\Domain.dll
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\obj\Debug\Domain.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\bin\Debug\CapaSoporte.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Domain\bin\Debug\CapaSoporte.pdb

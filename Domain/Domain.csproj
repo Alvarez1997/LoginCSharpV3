@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaSoporte\CapaSoporte.csproj">
+      <Project>{2f905c98-734f-4632-ac5b-f69189c740dd}</Project>
+      <Name>CapaSoporte</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{d65a35f8-0faa-4e0c-9bf9-cbe952c20fb0}</Project>
       <Name>DataAccess</Name>

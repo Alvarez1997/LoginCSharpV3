@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices; //poder arrastrar la ventana 
 using Domain;
+using CapaSoporte.Cache;
 
 namespace Presentation
 {
@@ -109,6 +110,7 @@ namespace Presentation
                     if (validLogin == true) //si el inicio de sesion es correcto, instancio al formulario principal 
                     {
                         FormPrincipal mainMenu = new FormPrincipal();
+                        MessageBox.Show("Bienvenido " + UserLoginCache.FirstName + " " + UserLoginCache.LastName);
                         mainMenu.Show();
                         mainMenu.FormClosed += Logout; //sobrecargar el metodo FormClosed con el metodo de cerrar secion
                         this.Hide(); //oculta el menu login

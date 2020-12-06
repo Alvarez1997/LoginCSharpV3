@@ -3,3 +3,7 @@ C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\bin\Debug\DataAccess
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\bin\Debug\CapaSoporte.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\bin\Debug\CapaSoporte.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete

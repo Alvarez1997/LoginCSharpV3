@@ -42,6 +42,10 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.panelContenedor.SuspendLayout();
             this.panelFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -89,6 +94,10 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.lblEmail);
+            this.panelMenu.Controls.Add(this.lblName);
+            this.panelMenu.Controls.Add(this.lblPosition);
+            this.panelMenu.Controls.Add(this.pictureBox2);
             this.panelMenu.Controls.Add(this.btnCerrarSesion);
             this.panelMenu.Controls.Add(this.btnFormulario3);
             this.panelMenu.Controls.Add(this.btnFormulario2);
@@ -109,7 +118,7 @@
             this.btnFormulario3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormulario3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormulario3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFormulario3.Location = new System.Drawing.Point(0, 184);
+            this.btnFormulario3.Location = new System.Drawing.Point(0, 354);
             this.btnFormulario3.Name = "btnFormulario3";
             this.btnFormulario3.Size = new System.Drawing.Size(188, 40);
             this.btnFormulario3.TabIndex = 2;
@@ -125,7 +134,7 @@
             this.btnFormulario2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormulario2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormulario2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFormulario2.Location = new System.Drawing.Point(0, 138);
+            this.btnFormulario2.Location = new System.Drawing.Point(0, 308);
             this.btnFormulario2.Name = "btnFormulario2";
             this.btnFormulario2.Size = new System.Drawing.Size(188, 40);
             this.btnFormulario2.TabIndex = 1;
@@ -141,7 +150,7 @@
             this.btnFormulario1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormulario1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormulario1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFormulario1.Location = new System.Drawing.Point(0, 92);
+            this.btnFormulario1.Location = new System.Drawing.Point(0, 262);
             this.btnFormulario1.Name = "btnFormulario1";
             this.btnFormulario1.Size = new System.Drawing.Size(188, 40);
             this.btnFormulario1.TabIndex = 0;
@@ -233,6 +242,49 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(39, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 97);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.ForeColor = System.Drawing.Color.LightGray;
+            this.lblPosition.Location = new System.Drawing.Point(43, 128);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(57, 17);
+            this.lblPosition.TabIndex = 5;
+            this.lblPosition.Text = "Posicion";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.LightGray;
+            this.lblName.Location = new System.Drawing.Point(43, 154);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(56, 17);
+            this.lblName.TabIndex = 6;
+            this.lblName.Text = "Nombre";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.LightGray;
+            this.lblEmail.Location = new System.Drawing.Point(43, 182);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(39, 17);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,11 +300,13 @@
             this.panelFormularios.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +326,10 @@
         private System.Windows.Forms.Button btnFormulario1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

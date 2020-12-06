@@ -1,0 +1,6 @@
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\bin\Debug\CapaSoporte.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\bin\Debug\CapaSoporte.pdb
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\obj\Debug\CapaSoporte.csprojAssemblyReference.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\obj\Debug\CapaSoporte.csproj.CoreCompileInputs.cache
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\obj\Debug\CapaSoporte.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\CapaSoporte\obj\Debug\CapaSoporte.pdb

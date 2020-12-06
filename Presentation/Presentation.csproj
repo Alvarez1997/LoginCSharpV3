@@ -92,6 +92,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaSoporte\CapaSoporte.csproj">
+      <Project>{2f905c98-734f-4632-ac5b-f69189c740dd}</Project>
+      <Name>CapaSoporte</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{963e70f6-a8bc-4413-9a83-ee50ee38a6bb}</Project>
       <Name>Domain</Name>

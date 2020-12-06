@@ -16,3 +16,5 @@ C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presenta
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.exe
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.pdb
 C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\obj\Debug\Presentation.FormPrincipal.resources
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\CapaSoporte.dll
+C:\Users\Alvar\source\repos\LoginLayeredCSharpV3\Presentation\bin\Debug\CapaSoporte.pdb
