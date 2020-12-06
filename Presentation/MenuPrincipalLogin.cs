@@ -116,7 +116,8 @@ namespace Presentation
                     else //si el inicio de sesion no es exitoso
                     {
                         msgError("Usuario o Contraseña incorrectos! \n  Por Favor intentelo de nuevo.");
-                        txtpass.Clear();
+                        txtpass.Text = "CONTRASEÑA";
+                        txtpass.UseSystemPasswordChar = false;
                         txtuser.Focus();
                     }
                 }
@@ -133,11 +134,12 @@ namespace Presentation
 
         private void Logout(object sender, FormClosedEventArgs e)
         {
-            txtpass.Clear();
-            txtuser.Clear();
+            txtpass.Text = "CONTRASEÑA";
+            txtpass.UseSystemPasswordChar = false;
+            txtuser.Text = "USUARIO";
             lblErrorMessage.Visible = false;
             this.Show(); //muestra de nuevo el menu Login en ves del menu principal
-            txtuser.Focus();
+            //txtuser.Focus();
         }
     }
 }
