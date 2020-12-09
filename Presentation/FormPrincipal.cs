@@ -18,12 +18,31 @@ namespace Presentation
         {
             InitializeComponent();
 
-            LoadUserData(); //correcion provicional del error  
 
             //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
 
+            LoadUserData(); 
+            PermisosNivelUsuario();
+            
+        }
+
+        private void PermisosNivelUsuario()
+        {
+            if (UserLoginCache.Position == CargosBD.Accounting)
+            {
+                btnFormulario1.Enabled = false; //btnUsuarios
+                btnFormulario3.Enabled = false; //btnHistorial
+            }
+            if (UserLoginCache.Position == CargosBD.Receptionist)
+            {
+                btnFormulario1.Enabled = false;
+            }
+            if (UserLoginCache.Position == CargosBD.Administrator)
+            {
+                //codigo para admin
+            }
         }
 
         #region Funcionalidades del formulario
@@ -161,11 +180,6 @@ namespace Presentation
             {
                 this.Close();
             }
-        }
-
-        private void FormPrincipal_Load(object sender, EventArgs e) //METODO NO CARGA LOS DATOS A LOS LABELS - SOLUCION PROVICIONAL INICIANDO DESDE MAIN()
-        {
-            LoadUserData();
         }
 
         private void LoadUserData() //metodo para usar los datos de la base de datos guardados en la cache de la capa soporte

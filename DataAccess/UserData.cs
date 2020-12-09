@@ -43,5 +43,21 @@ namespace DataAccess
                 }
             }
         }
+
+        //cualquier metodo que se necesite ya con la seguridad/privilegios del ususario, desde admin hasta usuario comun
+        public void CualquierMetodo()
+        {
+            if (UserLoginCache.Position == CargosBD.Administrator)
+            {
+                //cualquier cosa que solo el admin pueda hacer
+                //como modificar la base de datos
+            }
+
+            if (UserLoginCache.Position == CargosBD.Receptionist || UserLoginCache.Position == CargosBD.Accounting)
+            {
+                //limitaciones de ususarios standar
+            }
+        }
+
     }
 }
